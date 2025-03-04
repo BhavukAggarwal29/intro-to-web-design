@@ -4,65 +4,84 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
   </head>
   <body>
-    <a href="index.html">Home</a>
-    <a href="about_us.html">About Us</a>
-    <a href="contact_us.html">Contact Us</a>
+    <header>
+      <div id="banner">
+        <p>Notification</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about_us.html">About Us</a>
+        <a href="contact_us.html">Contact Us </a>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <hr />
+      <article>
+        <h2>Locations</h2>
+        <table>
+          <tr>
+            <th>Logo</th>
+            <th>Location</th>
+            <th>Opening hours</th>
+            <th>Email</th>
+            <th>Phone</th>
+          </tr>
+          <tr>
+            <td><img class="logo" src="images/cube.jpg" alt="logo 1" /></td>
+            <td>Faridabad</td>
+            <td>9AM-6PM</td>
+            <td>Faridabad@gmail.com</td>
+            <td>9255413992</td>
+          </tr>
+          <tr>
+            <td><img class="logo" src="images/cube.jpg" alt="logo 1" /></td>
+            <td>Noida</td>
+            <td>9AM-6PM</td>
+            <td>Noida@gmail.com</td>
+            <td>9255413993</td>
+          </tr>
+          <tr>
+            <td><img class="logo" src="images/cube.jpg" alt="logo 1" /></td>
+            <td>Gurugram</td>
+            <td>9AM-6PM</td>
+            <td>Gurugram@gmail.com</td>
+            <td>9255413994</td>
+          </tr>
+        </table>
+      </article>
+      <article>
+        <h2>General Inquiry</h2>
+        <form action="confirmation.html">
+          <label for="fullname">Name: *</label><br />
+          <input required type="text" id="fullname" name="fullname" />
+          <br /><br />
+          <label for="email">Email: *</label><br />
+          <input required type="email" id="email" name="emailadd" />
+          <br /><br />
+          <label for="">Are you Employed?</label><br />
+          <input type="radio" value="Y" name="employed" />Yes
+          <input type="radio" value="N" name="employed" />No <br /><br />
+          <label for="inquiry">State your inquiry *</label><br />
+          <textarea
+            required
+            cols="50"
+            rows="10"
+            maxlength="150"
+            id="inquiry"
+            name="inquiry"
+          ></textarea>
+          <br /><br />
 
-    <h1 style="color: blue">Contact Us</h1>
-    <hr />
-
-    <h2></h2>
-    <table>
-      <tr>
-        <th>Location</th>
-        <th>Opening hours</th>
-        <th>Email</th>
-        <th>Phone</th>
-      </tr>
-      <tr>
-        <td>Faridabad</td>
-        <td>9AM-6PM</td>
-        <td>Faridabad@gmail.com</td>
-        <td>9255413992</td>
-      </tr>
-      <tr>
-        <td>Noida</td>
-        <td>9AM-6PM</td>
-        <td>Noida@gmail.com</td>
-        <td>9255413993</td>
-      </tr>
-      <tr>
-        <td>Gurugram</td>
-        <td>9AM-6PM</td>
-        <td>Gurugram@gmail.com</td>
-        <td>9255413994</td>
-      </tr>
-    </table>
-    <h2>General Inquiry</h2>
-    <form action="confirmation.html">
-      <label for="fullname">Name: *</label><br />
-      <input required type="text" id="fullname" name="fullname" />
-      <br /><br />
-      <label for="email">Email: *</label><br />
-      <input required type="email" id="email" name="emailadd" />
-      <br /><br />
-      <label for="">Are you Employed?</label><br />
-      <input type="radio" value="Y" name="employed" />Yes
-      <input type="radio" value="N" name="employed" />No <br /><br />
-      <label for="inquiry">State your inquiry *</label><br />
-      <textarea
-        required
-        cols="50"
-        rows="10"
-        maxlength="150"
-        id="inquiry"
-        name="inquiry"
-      ></textarea>
-      <br /><br />
-
-      <input type="submit" />
-    </form>
+          <input type="submit" />
+        </form>
+      </article>
+    </main>
+    <footer>
+      <a href="https://musclenectar.com/">Amazon</a>
+    </footer>
   </body>
 </html>
